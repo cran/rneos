@@ -26,9 +26,7 @@ NgetFinalResults(obj, convert = TRUE)
 }
 
 \references{
-  NEOS API: \url{http://neos-guide.org/content/NEOS-API},\cr
-  Omegahat web site for RCurl: \url{http://www.omegahat.net/RCurl},\cr
-  Omegahat web site for XMLRPC: \url{http://www.omegahat.net/XMLRPC}
+  NEOS API: \url{https://neos-server.org/neos/xml-rpc.html}
 }
 
 \author{
@@ -41,9 +39,8 @@ NgetFinalResults(obj, convert = TRUE)
 
 \examples{
 \dontrun{
-
-tmp <-NgetSolverTemplate(category = "go", solvername = "ASA",
-inputMethod = "AMPL")
+tmp <-NgetSolverTemplate(category = "lp", solvername = "MOSEK",
+                         inputMethod = "AMPL")
 ## setting path to example model and data file
 modf <- system.file("ExAMPL", "diet.mod", package = "rneos")
 datf <- system.file("ExAMPL", "diet.dat", package = "rneos")
